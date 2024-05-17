@@ -4,9 +4,11 @@ specifiers:
   '@vitejs/plugin-vue': ^5.0.4
   vite: ^5.2.8
   vue: ^3.4.21
+  vuedraggable: ^4.1.0
 
 dependencies:
   vue: 3.4.27
+  vuedraggable: 4.1.0_vue@3.4.27
 
 devDependencies:
   '@vitejs/plugin-vue': 5.0.4_vite@5.2.11+vue@3.4.27
@@ -550,6 +552,10 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /sortablejs/1.14.0:
+    resolution: {integrity: sha512-pBXvQCs5/33fdN1/39pPL0NZF20LeRbLQ5jtnheIPN9JQAaufGjKdWduZn4U7wCtVuzKhmRkI0DFYHYRbB2H1w==}
+    dev: false
+
   /source-map-js/1.2.0:
     resolution: {integrity: sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==}
     engines: {node: '>=0.10.0'}
@@ -606,3 +612,12 @@ packages:
       '@vue/runtime-dom': 3.4.27
       '@vue/server-renderer': 3.4.27_vue@3.4.27
       '@vue/shared': 3.4.27
+
+  /vuedraggable/4.1.0_vue@3.4.27:
+    resolution: {integrity: sha512-FU5HCWBmsf20GpP3eudURW3WdWTKIbEIQxh9/8GE806hydR9qZqRRxRE3RjqX7PkuLuMQG/A7n3cfj9rCEchww==}
+    peerDependencies:
+      vue: ^3.0.1
+    dependencies:
+      sortablejs: 1.14.0
+      vue: 3.4.27
+    dev: false
